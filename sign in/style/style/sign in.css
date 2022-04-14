@@ -1,0 +1,176 @@
+@import url(../style/signinfont.css);
+
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+/* Root Start */
+
+:root {
+    --lbi: "LibreBaskerville-Italic";
+    --pr: "Poppins-Regular";
+}
+
+/* Root End */
+
+/* Header Start */
+
+.header__nav {
+    background: rgb(2, 0, 36);
+    background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(9, 9, 121, 1) 35%, rgba(0, 212, 255, 1) 100%);
+}
+
+.header__nav-content {
+    height: 90px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header__nav-logo {
+    height: 90px;
+    display: flex;
+}
+
+.header__nav-list {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+
+
+/* Header End */
+
+/* Main Start */
+
+.sign__content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    max-width: 320px;
+    gap: 10px;
+    border: 1px solid gray;
+    padding: 15px;
+    border-radius: 10px;
+    justify-content: center;
+    background-color: rgb(248, 250, 255);
+}
+
+form p {
+    font-family: var(--pr);
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 20px;
+    letter-spacing: 0.5px;
+    text-align: left;
+}
+
+.form__text span {
+    font-family: Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
+    background: rgb(2, 0, 36);
+    background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(9, 9, 121, 1) 35%, rgba(0, 212, 255, 1) 100%);
+    color: white;
+    border-radius: 5px;
+}
+
+form label {
+    font-family: var(--lbi);
+    color: rgb(15, 15, 15);
+}
+
+form input {
+    font-family: var(--lbi);
+    font-size: 15px;
+    text-align: left;
+    padding: 10px 15px;
+    border-radius: 10px;
+    border: 1px solid gray;
+    width: 100%;
+}
+
+form input:focus {
+    outline: gold;
+}
+
+.sign__btn {
+    font-family: var(--pr);
+    display: flex;
+    gap: 5px;
+    justify-content: center;
+    align-items: center;
+    background: rgb(2, 2, 2);
+    color: white;
+    border: none;
+    padding: 7px 15px;
+    font-size: 17px;
+    border-radius: 2px;
+    transition: all 0.3s ease-in-out;
+    width: 100%;
+}
+
+.sign__btn:active {
+    transform: scale(1.05);
+    cursor: pointer;
+}
+
+.form__link {
+    color: rgb(48, 14, 201);
+    margin-top: 5px;
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+    font-size: 17px;
+}
+
+.form__link:active {
+    color: black;
+    transform: scale(1.05);
+    cursor: wait;
+}
+
+.google__sign {
+    transform: scale(1.05);
+    cursor: pointer;
+    color: white;
+    display: flex;
+    align-items: center; 
+    justify-content: center;
+    border: 1px solid gray;
+    border-radius: 4px;
+    padding: 7px 12px;
+    gap: 4px;
+    background:linear-gradient(-120deg, #4285f4, #34a853, #fbbc05, #ea4335);
+}
+
+.google__sign i {
+     color: white;
+}
+
+.google__sign:active {
+    color: black;
+    transform: scale(1.07);
+    cursor: wait;
+}
+
+
+
+
+/* Main End */
