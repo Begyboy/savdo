@@ -27,8 +27,8 @@
 /* Header Start */
 
 .header__nav {
-    background: rgb(2,0,36);
-background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%);
+    background: rgb(2, 0, 36);
+    background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(9, 9, 121, 1) 35%, rgba(0, 212, 255, 1) 100%);
 }
 
 .header__nav-content {
@@ -70,7 +70,6 @@ form {
     padding: 15px;
     border-radius: 10px;
     justify-content: center;
-    align-items: center;
     background-color: rgb(248, 250, 255);
 }
 
@@ -121,13 +120,13 @@ form input:focus {
     color: white;
     border: none;
     padding: 7px 15px;
-    font-size: 15px;
+    font-size: 17px;
     border-radius: 2px;
     transition: all 0.3s ease-in-out;
     width: 100%;
 }
 
-.sign__btn:hover {
+.sign__btn:active {
     transform: scale(1.05);
     cursor: pointer;
 }
@@ -135,9 +134,41 @@ form input:focus {
 .form__link {
     color: rgb(48, 14, 201);
     margin-top: 5px;
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+    font-size: 17px;
 }
 
+.form__link:active {
+    color: black;
+    transform: scale(1.05);
+    cursor: wait;
+}
 
+.google__sign {
+    transform: scale(1.05);
+    cursor: pointer;
+    color: white;
+    display: flex;
+    align-items: center; 
+    justify-content: center;
+    border: 1px solid gray;
+    border-radius: 4px;
+    padding: 7px 12px;
+    gap: 4px;
+    background:linear-gradient(-120deg, #4285f4, #34a853, #fbbc05, #ea4335);
+}
+
+.google__sign i {
+     color: white;
+}
+
+.google__sign:active {
+    color: black;
+    transform: scale(1.07);
+    cursor: wait;
+}
 
 
 
